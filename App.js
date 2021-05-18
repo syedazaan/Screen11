@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet,Text,View,  Image,ImageBackground, FlatList, TouchableOpacity,} from 'react-native';
-import { styles1 } from  "./styles/styles";
+import { styles } from  "./styles/styles";
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -115,35 +115,35 @@ constructor(props) {
         
     return (
     
-          <View style= {[styles1.flexOne,styles1.Margin10,styles1.bgWhite]}>
+          <View style= {[styles.flexOne,styles.Margin10,styles.bgWhite]}>
          
-                 <View style={[styles1.flexThree,]}>
+                 <View style={[styles.flexThree,]}>
                     
-                         <Text style={[styles1.fontSize36,styles1.fontWeight300,styles1.marginTop32,]}>Invoices</Text>
+                         <Text style={[styles.fontSize36,styles.fontWeight300,styles.marginTop32,]}>Invoices</Text>
              
                 </View>
          
                
 
-                <View style={[styles1.flexOne,styles1.bgGreyLight,styles1.row,styles1.radius16,styles1.Margin10,]}>
+                <View style={[styles.flexOne,styles.bgGreyLight,styles.row,styles.radius16,styles.Margin10,]}>
                
                 
                
-                           <View style={[styles1.flexOne,this.state.paidView ? styles1.bgWhite:{backgroundColor:'transparent'}, styles1.radius10,styles1.margin6,styles1.allCenter,]}>
+                           <View style={[styles.flexOne,this.state.paidView ? styles.bgWhite:{backgroundColor:'transparent'}, styles.radius10,styles.margin6,styles.allCenter,]}>
 
                                  <TouchableOpacity onPress={()=> this.setState({ paidView: true})}>  
                 
-                                      <Text style={[styles1.medium22,styles1.fontSize23]}>Unpaid</Text>
+                                      <Text style={[styles.medium22,styles.fontSize23]}>Unpaid</Text>
 
                                 </TouchableOpacity>           
               
                           </View>
               
-                           <View style={[styles1.flexOne,styles1.allCenter,this.state.paidView ? {backgroundColor:'transparent'}: styles1.bgWhite ]}>
+                           <View style={[styles.flexOne,styles.allCenter,this.state.paidView ? {backgroundColor:'transparent'}: styles.bgWhite ]}>
 
                                <TouchableOpacity onPress={()=> this.setState({ paidView:false})}>
                    
-                                     <Text style={[styles1.fontSize25,styles1.fontWeight900 ]}>Paid</Text>
+                                     <Text style={[styles.fontSize25,styles.fontWeight900 ]}>Paid</Text>
 
                               </TouchableOpacity>
               
@@ -169,13 +169,13 @@ constructor(props) {
                 
                  return(
                    
-                   <View style={[styles1.radius10,styles1.margin6,styles1.margin6,styles1.flexOneAndHalf,styles1.row]}>
+                   <View style={[styles.radius10,styles.margin6,styles.margin6,styles.flexOneAndHalf,styles.row]}>
                            
-                           <View style={[styles1.flexOne,styles1.radius10,styles1.margin6]}>
+                           <View style={[styles.flexOne,styles.radius10,styles.margin6]}>
                                   
                                    <Image
                                           
-                                              style={[styles1.width90,styles1.height95,styles1.allCenter]}
+                                              style={[styles.width90,styles.height95,styles.allCenter]}
                                  
                                               source={require('./img/img2.jpg')}
                                  
@@ -184,25 +184,25 @@ constructor(props) {
 
                            </View>
                            
-                           <View style={[styles1.flexFour,]}>
+                           <View style={[styles.flexFour,]}>
                                     
-                                     <Text style={[styles1.flexOne,styles1.fontSize19,styles1.fontWeight600,]}>{rowData.title}</Text>
+                                     <Text style={[styles.flexOne,styles.fontSize19,styles.fontWeight600,]}>{rowData.title}</Text>
                                     
-                                     <Text style={[styles1.flexQuarterToOne,styles1.fontSize15,styles1.greenDark]}>{rowData.description}</Text>
+                                     <Text style={[styles.flexQuarterToOne,styles.fontSize15,styles.greenDark]}>{rowData.description}</Text>
                            
                            </View>
                           
-                           <View style={[ styles1.flexThree,]}>
+                           <View style={[ styles.flexThree,]}>
                                      
-                                      <Text style={[ styles1.flexTwo,styles1.fontSize19,styles1. textRight,styles1.fontWeight600, ]}>{rowData.dollar}</Text>
+                                      <Text style={[ styles.flexTwo,styles.fontSize19,styles. textRight,styles.fontWeight600, ]}>{rowData.dollar}</Text>
                               
-                                      <Text style={[styles1.flexOne,styles1.fontSize15,styles1.greenDark,styles1.textRight]}>{rowData.description2}</Text>
+                                      <Text style={[styles.flexOne,styles.fontSize15,styles.greenDark,styles.textRight]}>{rowData.description2}</Text>
                            
                            </View>
                   
-                           <View style={[styles1.flexOne,styles1.radius10,styles1.allCenter]}>
+                           <View style={[styles.flexOne,styles.radius10,styles.allCenter]}>
                             
-                                       <Text style={[styles1.fontSize19]}>{myIcon}</Text>
+                                       <Text style={[styles.fontSize19]}>{myIcon}</Text>
                            
                            </View>
                    
